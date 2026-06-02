@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --window-size=1000,1400 --screenshot=/tmp/pg_shot.png --default-background-color=00000000 file://__TRACKED_VAR__/index.html)",
+      "Bash(echo \"done $?\")",
+      "Read(//tmp/**)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --window-size=1000,2400 --screenshot=/tmp/pg_full.png \"http://localhost:8765/index.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --window-size=1000,2200 --screenshot=/tmp/pg_new.png \"http://localhost:8765/index.html\")",
+      "Bash(pkill -f \"http.server 8765\")"
+    ]
+  }
+}
