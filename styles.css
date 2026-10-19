@@ -200,14 +200,14 @@ a:hover { text-decoration: underline; }
 /* FAQ ----------------------------------------------------------------- */
 .faq { padding: 80px 0; }
 
-.faq dl { margin: 0; }
-.faq dt {
+.faq dl, .page dl { margin: 0; }
+.faq dt, .page dt {
   font-weight: 600;
   margin-top: 24px;
   font-size: 17px;
 }
-.faq dt:first-of-type { margin-top: 0; }
-.faq dd {
+.faq dt:first-of-type, .page dt:first-of-type { margin-top: 0; }
+.faq dd, .page dd {
   margin: 4px 0 0;
   color: var(--ink-soft);
 }
@@ -242,3 +242,18 @@ footer a:hover { color: var(--ink); }
   font-size: 14px;
   color: var(--ink-soft);
 }
+.page h2 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  margin: 40px 0 8px;
+}
+.page h2 + p, .page h2 + ul, .page h2 + dl { margin-top: 0; }
+.page ul { padding-left: 22px; color: var(--ink-soft); }
+.page li { margin: 4px 0; }
+.page code { font-size: 0.9em; }
+.page__meta { font-size: 14px; margin-top: -16px; opacity: 0.8; }
+.page__lead { font-size: 19px; color: var(--ink); }
+.page__links { margin-top: 40px; font-size: 15px; }
